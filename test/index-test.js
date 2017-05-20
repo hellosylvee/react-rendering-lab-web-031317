@@ -14,7 +14,7 @@ describe('Rating', () => {
     expect(wrapper.state()).toEqual({ increasing: true, decreasing: false });
   });
 
-  it('sets the increasing state correctly', () => {
+  it('sets the decreasing state correctly', () => {
     const wrapper = shallow(<Rating rating={1} />);
     wrapper.setProps({ rating: -4 });
     expect(wrapper.state()).toEqual({ increasing: false, decreasing: true });
